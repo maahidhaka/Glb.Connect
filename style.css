@@ -1,0 +1,132 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  margin-top: -100px;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.navbar {
+  margin-left: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2em;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff2975;
+}
+
+body {
+  background-color: hsl(0, 0%, 97%);
+  color: #fff;
+  padding-top: 80px; /* Adds space for fixed navbar */
+} 
+.search-bar {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  margin-right: 250px;
+}
+
+.search-input {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  width: 180px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #ccc;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ff2975; /* Highlight border on focus */
+}
+.card {
+  margin-left: 480px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.card img {
+  transition: 1s ease;
+  }
+
+.card img:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+/*.card img {
+  transition: 1s ease;
+  }
+  
+  .card img:hover {
+  border-radius:50%;
+  transition: 1s ease;
+  }*/
+
+#yr1 {
+  margin-left: -250px;
+  margin-top: 50px;
+  height: 5px;
+  width: 5px;
+}
+#yr2 {
+  margin-left: 350px;
+  margin-top: -5px;
+  height: 5px;
+  width: 5px;
+}
+#yr3 {
+  margin-left: -250px;
+  margin-top: 450px;
+  height: 5px;
+  width: 5px;
+}
+#yr4 {
+  margin-left: 350px;
+  margin-top: -10px;
+  height: 5px;
+  width: 5px;
+}
